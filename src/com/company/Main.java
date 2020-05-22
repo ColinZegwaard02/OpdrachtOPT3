@@ -15,6 +15,9 @@ public class Main {
         Product bonen = new Geconserveerd("Hak", 1, true);
         houdbaar.add(bonen);
 
+        Manager manager = Manager.getInstance();
         houdbaarheidProduct obj = new houdbaarheidProduct();
+        System.out.println(obj.getInstance("Kort houdbaar"));
+        System.out.println(obj.getInstance("Lang houdbaar"));
     }
 }
